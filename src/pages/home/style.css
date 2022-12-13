@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+body, #root{
+	width: 100%;
+	height: 100vh;
+
+	background: #f2f2ff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 70%;
+	height: 80%;
+
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+
+	padding: 5%;
+	box-shadow: #dbdbed 0px 0 60px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.container #content-home{
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: normal;
+}
+.container #content-home #text h1{
+    font-size: 5.3vh;
+}
+.container #content-home #text p{
+	word-break: normal;
+	margin-top: 12px;
+	color: #525252;
+	font-size: 2.6vh;
+}
+#banner{
+	width: 40%;
+}
+.container #content-home #entrada{
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.container #content-home #entrada #consulta-text{
+    padding: 3vh;
+    font-size: 2.5vh;
+    width: 44vh;
+    box-shadow: #f5f5ff 0px 0px 30px;
+    z-index: 100;
+    border: 0;
+    background: #f5f5ff;
+    border-radius: 1vh;
+}
+.container #content-home #entrada #consulta-button{
+    background: rgb(0 164 255);
+    box-shadow: #00a4ff33 0px 0px 30px;
+    color: #fff;
+    border: 0;
+    width: max-content;
+    padding: 3vh;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    font-weight: 600;
+    margin-top: 2vh;
+}

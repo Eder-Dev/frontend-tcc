@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
+}
+body, #root{
+	width: 100%;
+	height: 100vh;
+
+	background: #f2f2ff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 70%;
+	height: 80%;
+
+	background: #fff;
+	border: 0;
+	border-radius: 2vw;
+
+	padding: 5%;
+	box-shadow: #dbdbed 0px 0 6vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.container #content{
+	width: 50%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: normal;
+	align-items: normal;
+}
+.container #content h1{
+    font-size: 5.3vh;
+}
+.nome, .cpf, .horario{
+    padding: 3vh;
+    font-size: 2.5vh;
+    width: 44vh;
+    box-shadow: #f5f5ff 0px 0px 30px;
+    z-index: 100;
+    border: 0;
+    background: #f5f5ff;
+    border-radius: 1vh;
+}
+
+.quest {
+    margin-top: 5%;
+}
+.quest p{
+    font-size: 2.6vh;
+    margin-bottom: 0.5vh;
+}
+.label{
+	color: #000;
+	font-weight: 600;
+}
+#banner{
+	width: 50%;
+	opacity: 1;
+	transition: 15s opacity;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+#consulta-button{
+    background: rgb(0 164 255);
+    box-shadow: #00a4ff33 0px 0px 30px;
+    color: #fff;
+    border: 0;
+    width: max-content;
+    padding: 3vh;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    font-weight: 600;
+    margin-top: 2vh;
+}
