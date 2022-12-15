@@ -15,9 +15,10 @@ function Admin(){
       })
   },[])
   const handleSelectConsult = (e) => {
+    let c = e.target.selectedOptions[0].innerText
     setSelected(e.target.selectedOptions[0].innerText)
     console.log(e.target.selectedOptions[0].innerText)
-    api.post('/booking/search', {search: 'Atendimento 3', type: 'consultation'}).then(response => {
+    api.post('/booking/search', {search: c, type: 'consultation'}).then(response => {
         console.log(response.data)
         //setData(response.data);
     })
@@ -40,7 +41,7 @@ function Admin(){
         	<ul>
         		<li>
         			<div>
-        				<p><strong>Nome: </strong>Eder Pereira Pacheco Júnior</p>
+        				<p><strong>Nome: </strong>Eder Pereira Pacheco Junior</p>
         				<p><strong>CPF: </strong>000.000.000-00</p>
         				<p><strong>SUS: </strong>111222333444</p>
         				<p><strong>Hora: </strong>08:00</p>
