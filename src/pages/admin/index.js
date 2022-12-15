@@ -8,7 +8,7 @@ import banner from '../../assets/banner2.svg'
 function Admin(){
   const [data, setData] = useState([])
   const [selected, setSelected] = useState('')
-  const [query, setQuery] = useState([{name:"",cpf:"",numSUS:"", date:""}])
+  const [query, setQuery] = useState([])
   useEffect(() => {
     api.get('/consultation/list').then(response => {
           setData(response.data);
@@ -43,7 +43,7 @@ function Admin(){
               return(
                 <li>
                   <div>
-                    <p><strong>Nome: </strong>Eder Pereira Pacheco Junior</p>
+                    <p><strong>Nome: </strong>{e.name}</p>
                     <p><strong>CPF: </strong>{e.cpf}</p>
                     <p><strong>SUS: </strong>{e.numSUS}</p>
                     <p><strong>Hora: </strong>{e.date}</p>
