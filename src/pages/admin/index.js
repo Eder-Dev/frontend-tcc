@@ -51,30 +51,6 @@ function Admin(){
                 </li>
               )
             })}
-        		<li>
-        			<div>
-        				<p><strong>Nome: </strong>Eder Pereira Pacheco Junior</p>
-        				<p><strong>CPF: </strong>000.000.000-00</p>
-        				<p><strong>SUS: </strong>111222333444</p>
-        				<p><strong>Hora: </strong>08:00</p>
-        			</div>
-        		</li>
-        		<li>
-        			<div>
-        				<p><strong>Nome: </strong>Carlos Henrique Corte Pimentel Filho</p>
-        				<p><strong>CPF: </strong>000.000.000-00</p>
-        				<p><strong>SUS: </strong>111222333444</p>
-        				<p><strong>Hora: </strong>10:00</p>
-        			</div>
-        		</li>
-        		<li>
-        			<div>
-        				<p><strong>Nome: </strong>Antônio Victor Maciel Coutinho</p>
-        				<p><strong>CPF: </strong>000.000.000-00</p>
-        				<p><strong>SUS: </strong>111222333444</p>
-        				<p><strong>Hora: </strong>11:00</p>
-        			</div>
-        		</li>
         	</ul>
         </div>
       </div>
