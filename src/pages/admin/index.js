@@ -20,7 +20,7 @@ function Admin(){
     console.log(e.target.selectedOptions[0].innerText)
     api.post('/booking/search', {search: c, type: 'consultation'}).then(response => {
         console.log(response.data)
-        //setData(response.data);
+        setQuery(response.data);
     })
   }
   return (
@@ -39,6 +39,18 @@ function Admin(){
         </div>
         <div id='admin-list'>
         	<ul>
+            {query.map((e) => {
+              return(
+                <li>
+                  <div>
+                    <p><strong>Nome: </strong>Eder Pereira Pacheco Junior</p>
+                    <p><strong>CPF: </strong>{e.cpf}</p>
+                    <p><strong>SUS: </strong>{e.numSUS}</p>
+                    <p><strong>Hora: </strong>{e.date}</p>
+                  </div>
+                </li>
+              )
+            })}
         		<li>
         			<div>
         				<p><strong>Nome: </strong>Eder Pereira Pacheco Junior</p>
