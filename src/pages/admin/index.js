@@ -8,7 +8,7 @@ import banner from '../../assets/banner2.svg'
 function Admin(){
   const [data, setData] = useState([])
   const [selected, setSelected] = useState('')
-  const [query, setQuery] = useState()
+  const [query, setQuery] = useState([{name:"",cpf:"",numSUS:"", date:""}])
   useEffect(() => {
     api.get('/consultation/list').then(response => {
           setData(response.data);
